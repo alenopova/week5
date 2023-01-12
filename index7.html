@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        text-align: center;
+        height: 40px;
+        background-color: rgb(210, 213, 210);
+        font-weight: bold;
+      }
+      main {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        background-color: lightyellow;
+        font-weight: bold;
+      }
+
+      aside {
+        text-align: center;
+        display: flex;
+        min-height: 200px;
+        width: 30%;
+        background-color: rgb(177, 223, 177);
+        justify-content: center;
+        padding-top: 20px;
+        font-weight: bold;
+      }
+      section {
+        text-align: center;
+        flex: 1;
+      }
+      .flexcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        background-color: rgb(255, 237, 136);
+        font-weight: bold;
+        width: 350px;
+        height: 60px;
+      }
+      .item-1 {
+        background-color: rgb(244, 242, 188);
+        height: 40px;
+        width: 360px;
+        padding: 10px;
+      }
+      .item-2 {
+        background-color: rgb(244, 242, 188);
+        height: 40px;
+        width: 800px;
+        padding: 10px;
+      }
+
+      footer {
+        flex: 0 0 content;
+        background-color: rgb(210, 213, 210);
+        font-weight: bold;
+      }
+      .flexcontainer3 {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+      }
+      .flexp {
+        background-color: rgb(248, 246, 243);
+        height: 50px;
+        width: 150px;
+        text-align: center;
+        vertical-align: center;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">[Шапка страницы]</header>
+    <main class="main">
+      <section class="section">[Основная часть]</section>
+      <div class="flexcontainer">
+        <div class="item-1">[Ещё 1]</div>
+        <div class="item-1">[Ещё 2]</div>
+        <div class="item-2">[Ещё 3]</div>
+      </div>
+      <aside class="aside">[Боковая область]</aside>
+    </main>
+
+    <footer class="footer">
+      <div class="flexcontainer3">
+        <p class="flexp">[Секция футера 1]</p>
+        <p class="flexp">[Секция футера 2]</p>
+        <p class="flexp">[Секция футера 3]</p>
+        <p class="flexp">[Секция футера 4]</p>
+      </div>
+    </footer>
+  </body>
+</html>
